@@ -2,15 +2,227 @@
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
+        android:background="@drawable/bg_main"
         android:layout_height="match_parent">
 
-    <TextView
+    <ImageView
             android:layout_width="wrap_content"
+            android:src="@drawable/ic_cloud"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:id="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            android:layout_marginStart="96dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="92dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView6"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_cloud"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="104dp"
+            android:layout_marginBottom="224dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.011"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.881"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_cloud"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            android:layout_marginEnd="84dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.88"
+            android:layout_marginTop="232dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView7"
+            app:layout_constraintVertical_bias="0.282"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_cloud"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            android:layout_marginTop="120dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            android:id="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.4"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.736"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_cloud"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="88dp"
+            android:layout_marginTop="68dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_cloud"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="116dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:id="@+id/imageView2"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_cloud"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="1.0"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.076"/>
+    <!--Banner-->
+    <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            app:cardBackgroundColor="@color/colorTextStart"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="@dimen/_100sdp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:text="Banner"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+
+    </android.support.v7.widget.CardView>
+
+    <com.devhwang1312.cdk360.view.ImageClickAnimView
+            android:layout_width="0dp"
+            android:src="@drawable/ic_camnang"
+            android:id="@+id/img_1"
+            app:layout_constraintTop_toBottomOf="@id/cardView"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/img_2"
+            />
+
+    <com.devhwang1312.cdk360.view.ImageClickAnimView
+            android:layout_width="0dp"
+            app:layout_constraintLeft_toRightOf="@id/img_1"
+            app:layout_constraintRight_toLeftOf="@id/img_3"
+            android:src="@drawable/ic_tuytung"
+            app:layout_constraintTop_toBottomOf="@id/cardView"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/img_2"
+            app:layout_constraintHorizontal_bias="0.418"/>
+
+    <com.devhwang1312.cdk360.view.ImageClickAnimView
+            android:layout_width="0dp"
+            android:src="@drawable/ic_nhan_vat"
+            android:id="@+id/img_3"
+            app:layout_constraintTop_toBottomOf="@id/cardView"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toStartOf="@+id/img_4"
+            app:layout_constraintStart_toEndOf="@+id/img_2"
+            />
+
+    <com.devhwang1312.cdk360.view.ImageClickAnimView
+            android:layout_width="0dp"
+            android:src="@drawable/ic_pagoda"
+            app:layout_constraintTop_toBottomOf="@id/cardView"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/img_4"
+            app:layout_constraintLeft_toRightOf="@id/img_3"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="0dp"
+            android:text="Cẩm nang"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/img_1"
+            app:layout_constraintRight_toLeftOf="@+id/txt_2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+    <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Cẩm nang"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/txt_1"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/img_2"
+            app:layout_constraintRight_toLeftOf="@+id/txt_3"/>
+
+    <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/txt_3"
+            android:layout_width="0dp"
+            android:text="Cẩm nang"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:gravity="center"
+            app:layout_constraintLeft_toRightOf="@id/txt_2"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/img_3"
+            app:layout_constraintRight_toLeftOf="@+id/txt_4"/>
+
+
+    <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:id="@+id/txt_4"
+            android:layout_width="0dp"
+            android:text="Cẩm nang"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/img_4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/txt_3"
+           />
+
 </android.support.constraint.ConstraintLayout>
