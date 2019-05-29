@@ -1,9 +1,11 @@
 package com.devhwang1312.cdk360.ui
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.devhwang1312.cdk360.Model.CharacterObject
 import com.devhwang1312.cdk360.R
 
 
@@ -28,6 +30,7 @@ class MainFragment: BaseFragment() {
     }
 
     private fun init() {
-
+        var a = CharacterObject()
+        Log.e("HJVV1312","$a")
     }
 }
