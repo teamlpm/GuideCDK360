@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity(), IOnFragmentInteractListener {
     }
 
     override fun onOpenFragment(fragment: Fragment) {
-
+        openFragment(fragment, true)
     }
 
     private val mainFragment = MainFragment.newInstance()

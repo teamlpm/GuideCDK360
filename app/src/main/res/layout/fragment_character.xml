@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_clound">
+
+    <ImageView
+            android:layout_width="68dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_clould"
+            android:layout_marginTop="106dp"
+            android:layout_marginLeft="30dp"
+            />
+
+    <ImageView
+            android:layout_width="68dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_clould"
+            android:layout_gravity="right"
+            android:layout_marginTop="175dp"
+            android:layout_marginRight="75dp"
+            />
+
+    <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_clould"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="-30dp"
+            />
+
+    <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_clould"
+            android:layout_gravity="right"
+            android:layout_marginTop="370dp"
+            android:layout_marginRight="-30dp"
+            />
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_clould"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="180dp"
+            android:layout_marginLeft="80dp"
+            />
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_clould"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="50dp"
+            />
+
+    <ImageView
+            android:layout_width="324dp"
+            android:layout_height="329dp"
+            android:src="@drawable/ic_cricle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="47dp"/>
+
+    <ImageView
+            android:layout_width="323dp"
+            android:layout_height="328dp"
+            android:src="@drawable/ic_male"
+            android:layout_marginTop="124dp"
+            />
+    
+    <ImageView
+            android:layout_width="322dp"
+            android:layout_height="328dp"
+            android:src="@drawable/ic_female"
+            android:layout_marginTop="124dp"
+            android:layout_marginLeft="95dp"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="#C45858"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="100dp">
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_skill_1"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="120dp"
+                android:layout_marginBottom="51dp"/>
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_skill_2"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="170dp"
+                android:layout_marginBottom="51dp"/>
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_skill_3"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="110dp"
+                android:layout_marginBottom="51dp"/>
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_skill_4"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="51dp"/>
+
+    </FrameLayout>
+    
+    <FrameLayout
+            android:layout_width="68dp"
+            android:layout_height="125dp"
+            android:background="#DBB42C"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="200dp">
+
+    </FrameLayout>
+
+
+</FrameLayout>

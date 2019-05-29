@@ -5,11 +5,12 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.devhwang1312.cdk360.Model.CharacterObject
 import com.devhwang1312.cdk360.R
+import com.devhwang1312.cdk360.ui.character.FragmentCharacter
+import kotlinx.android.synthetic.main.fragment_main.*
 
 
-class MainFragment: BaseFragment() {
+class MainFragment : BaseFragment() {
     private var v: View? = null
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         if (v == null) {
@@ -30,7 +31,10 @@ class MainFragment: BaseFragment() {
     }
 
     private fun init() {
-        var a = CharacterObject()
-        Log.e("HJVV1312","$a")
+        img_2.setOnClickListener {
+            listenerI?.onOpenFragment(FragmentCharacter.newInstance())
+            Log.e("HVV1312", "onclick")
+
+        }
     }
 }
